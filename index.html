@@ -6,28 +6,32 @@
 
     <title>Document</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="all.min.css" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
 
     <!-- JS -->
-    <script src="all.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
     <style></style>
   </head>
   <body>
     <!-- Desctop Design -->
     <div class="m-0 p-0 dashboard-item-desktop">
-      <div class="row">
+      <div class="row bg-warning">
         <!-- dashboard section -->
         <div class="col-2 dashboard-Desctop-style">
           <div class="d-flex flex-column">
             <!--Logo Img-->
             <div class="box">
               <a href="#" class="text-decoration-none d-flex align-items-end">
-                <img src="logo.png" class="img-fluid w-100 mx-auto" alt="" />
+                <img
+                  src="./img/logo.png"
+                  class="img-fluid w-100 mx-auto"
+                  alt=""
+                />
               </a>
             </div>
             <!--End Logo Img-->
@@ -82,7 +86,10 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link dashboard-active" href="#">
+                  <a
+                    class="nav-link dashboard-active border-bottom border-secondary my-1"
+                    href="#"
+                  >
                     <i class="fa-solid fa-signal"></i>
                     <span>Analytics</span>
                   </a>
@@ -94,7 +101,8 @@
         </div>
         <!-- end dashboard section  -->
         <!-- Desctop body Design -->
-        <div class="col-10 bg-success p-0 m-0 sticky-top">
+        <!-- body color -->
+        <div class="col-10 dashboard-bg-color p-0 m-0 sticky-top">
           <div class="header-Dashboard-style py-2">
             <div class="row">
               <div class="col-6 px-5">
@@ -132,6 +140,157 @@
               </div>
             </div>
           </div>
+
+          <div class="container Dashboard-contaner">
+            <!-- body Header -->
+            <div class="my-3 fw-bold">
+              <h1>Seller Dashboard</h1>
+            </div>
+
+            <!-- body four (4) content -->
+            <div class="row d-flex justify-content-evenly">
+              <!-- Total Sales -->
+              <div
+                class="col-2 mx-1 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+              >
+                <p class="fs-4 fw-bold mt-3">
+                  <i class="fa-solid fa-dollar-sign"></i><span> num</span>
+                </p>
+                <p>Total Sales</p>
+              </div>
+              <!-- Orders Today -->
+              <div
+                class="col-2 mx-1 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+              >
+                <p class="fs-4 fw-bold mt-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span> num</span>
+                </p>
+                <p>Orders Today</p>
+              </div>
+              <!-- Active Customers -->
+              <div
+                class="col-2 mx-1 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+              >
+                <p class="fs-4 fw-bold mt-3">
+                  <i class="fa-solid fa-user"></i> <span> num</span>
+                </p>
+                <p>Active Customers</p>
+              </div>
+              <!--Inventory Alerts  -->
+              <div
+                class="col-2 mx-1 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+              >
+                <p class="fs-4 fw-bold mt-3">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <span> num</span>
+                </p>
+                <p>Inventory Alerts</p>
+              </div>
+            </div>
+            <!-- End body four (4) content -->
+
+            <!-- body two (2) content -->
+            <div class="row d-flex justify-content-evenly my-5">
+              <div class="col-6">
+                <div
+                  class="row d-flex justify-content-between bg-light rounded-2"
+                >
+                  <h5 class="fw-bold">Top Selling Products</h5>
+                  <table class="table table-hover bg-light">
+                    <tr>
+                      <td></td>
+                      <td>Product</td>
+                      <td class="text-end">Quantity (units)</td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa-solid fa-basket-shopping"></i></td>
+                      <td>Product-A</td>
+                      <td class="text-end">350 units</td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- Low Stock Products -->
+                <div
+                  class="row d-flex justify-content-between bg-light rounded-2 my-5"
+                >
+                  <h5 class="fw-bold">Low Stock Products</h5>
+                  <table class="table table-hover bg-light">
+                    <tr>
+                      <td></td>
+                      <td>Product</td>
+                      <td class="text-end">
+                        <i class="fa-solid fa-sort-down"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa-solid fa-arrow-trend-down"></i></td>
+                      <td>Product-A</td>
+                      <td class="text-end">350 units</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- Recent Orders -->
+                <div
+                  class="row d-flex justify-content-between bg-light rounded-2"
+                >
+                  <h5 class="fw-bold">Recent Orders</h5>
+                  <table class="table table-hover bg-light">
+                    <tr>
+                      <td>Order ID</td>
+                      <td>Customer</td>
+                      <td class="text-end">Total</td>
+                    </tr>
+                    <tr>
+                      <td>#123</td>
+                      <td>Altex Brown</td>
+                      <td class="text-end">
+                        <span>999</span> <i class="fa-solid fa-dollar-sign"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- Low Stock -->
+                <div
+                  class="row d-flex justify-content-between bg-light rounded-2 my-5"
+                >
+                  <table class="table table-hover bg-light mt-1">
+                    <tr>
+                      <td>Low Stock</td>
+                      <td class="text-end">Restock</td>
+                    </tr>
+                    <tr>
+                      <td>Product X</td>
+                      <td class="text-end">
+                        <span>num</span> <i class="fa-solid fa-dollar-sign"></i>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- Restock -->
+                <div
+                  class="row d-flex justify-content-between bg-light rounded-2 my-5"
+                >
+                  <table class="table table-hover bg-light mt-1">
+                    <tr>
+                      <td>Low Stock</td>
+                      <td class="text-end">Restock</td>
+                    </tr>
+                    <tr>
+                      <td>Product X</td>
+                      <td class="text-end">
+                        <button class="btn btn-outline-secondary">
+                          Restock
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!--  End Desctop body Design -->
       </div>
@@ -140,7 +299,7 @@
     <!--End Desctop Design -->
 
     <!-- Mobile Design -->
-    <div class="bg-warning dashboard-item-mobile">
+    <div class="dashboard-item-mobile">
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary dashboard-Mobile-style fixed-top"
       >
@@ -149,7 +308,7 @@
             <!-- Logo Img -->
             <div class="col-3">
               <a href="#" class="d-flex align-items-end">
-                <img src="logo.png" class="img-fluid" alt="" />
+                <img src="./img/logo.png" class="img-fluid" alt="" />
               </a>
             </div>
             <!-- search bar for mobile -->
@@ -261,8 +420,161 @@
         </div>
       </nav>
       <!--   Mobile body Design -->
-      <div class="bg-success mobile-layout w-100" style="padding-top: 70px">
-        body
+      <div
+        class="dashboard-bg-color mobile-layout w-100"
+        style="padding-top: 70px"
+      >
+        <div class="container Dashboard-contaner">
+          <!-- body Header -->
+          <div class="mt-5">
+            <div class="mt-3 fw-bold">
+              <h1 class="mt-5 fw-bold">Seller Dashboard</h1>
+            </div>
+          </div>
+
+          <!-- Mobile body four (2) content -->
+          <div class="row d-flex justify-content-evenly">
+            <!-- Total Sales -->
+            <div
+              class="col-4 mx-1 my-3 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+            >
+              <p class="fs-4 fw-bold mt-3">
+                <i class="fa-solid fa-dollar-sign"></i><span> num</span>
+              </p>
+              <p>Total Sales</p>
+            </div>
+            <!-- Orders Today -->
+            <div
+              class="col-4 mx-1 my-3 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+            >
+              <p class="fs-4 fw-bold mt-3">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span> num</span>
+              </p>
+              <p>Orders Today</p>
+            </div>
+            <!-- Active Customers -->
+            <div
+              class="col-4 mx-1 my-3 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+            >
+              <p class="fs-4 fw-bold mt-3">
+                <i class="fa-solid fa-user"></i> <span> num</span>
+              </p>
+              <p class="mx-auto">Active Customers</p>
+            </div>
+            <!--Inventory Alerts  -->
+            <div
+              class="col-4 mx-1 my-3 d-flex flex-column align-items-center justify-content-center bg-light rounded-4"
+            >
+              <p class="fs-4 fw-bold mt-3">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span> num</span>
+              </p>
+              <p>Inventory Alerts</p>
+            </div>
+          </div>
+          <!-- End Mobile body four (2) content -->
+
+          <!--  Mobile body two (1) content -->
+          <div class="row d-flex justify-content-evenly my-5">
+            <div class="col-10">
+              <div
+                class="row d-flex justify-content-between bg-light rounded-2"
+              >
+                <h5 class="fw-bold">Top Selling Products</h5>
+                <table class="table table-hover bg-light">
+                  <tr>
+                    <td></td>
+                    <td>Product</td>
+                    <td class="text-end">Quantity (units)</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-basket-shopping"></i></td>
+                    <td>Product-A</td>
+                    <td class="text-end">350 units</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Low Stock Products -->
+              <div
+                class="row d-flex justify-content-between bg-light rounded-2 my-5"
+              >
+                <h5 class="fw-bold">Low Stock Products</h5>
+                <table class="table table-hover bg-light">
+                  <tr>
+                    <td></td>
+                    <td>Product</td>
+                    <td class="text-end">
+                      <i class="fa-solid fa-sort-down"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-arrow-trend-down"></i></td>
+                    <td>Product-A</td>
+                    <td class="text-end">350 units</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col-10">
+              <!-- Recent Orders -->
+              <div
+                class="row d-flex justify-content-between bg-light rounded-2"
+              >
+                <h5 class="fw-bold">Recent Orders</h5>
+                <table class="table table-hover bg-light">
+                  <tr>
+                    <td>Order ID</td>
+                    <td>Customer</td>
+                    <td class="text-end">Total</td>
+                  </tr>
+                  <tr>
+                    <td>#123</td>
+                    <td>Altex Brown</td>
+                    <td class="text-end">
+                      <span>999</span> <i class="fa-solid fa-dollar-sign"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Low Stock -->
+              <div
+                class="row d-flex justify-content-between bg-light rounded-2 my-5"
+              >
+                <table class="table table-hover bg-light mt-1">
+                  <tr>
+                    <td>Low Stock</td>
+                    <td class="text-end">Restock</td>
+                  </tr>
+                  <tr>
+                    <td>Product X</td>
+                    <td class="text-end">
+                      <span>num</span> <i class="fa-solid fa-dollar-sign"></i>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Restock -->
+              <div
+                class="row d-flex justify-content-between bg-light rounded-2 my-5"
+              >
+                <table class="table table-hover bg-light mt-1">
+                  <tr>
+                    <td>Low Stock</td>
+                    <td class="text-end">Restock</td>
+                  </tr>
+                  <tr>
+                    <td>Product X</td>
+                    <td class="text-end">
+                      <button class="btn btn-outline-secondary">Restock</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- End  Mobile body two (1) content -->
+        </div>
       </div>
       <!--  End Mobile body Design -->
     </div>
