@@ -73,13 +73,14 @@
                   <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
                       <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Management</a>
+                        <a class="nav-link text-light" href="#">
+                          Manage products</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Scheduling</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Reports </a>
+                        <a class="nav-link text-light" href="#">
+                          Add products</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -97,7 +98,7 @@
         </div>
         <!-- end dashboard section  -->
         <!-- Desctop body Design -->
-        <div class="col-10 bg-success p-0 m-0">
+        <div class="col-10 bg-success p-0 m-0 sticky-top">
           <div class="header-Dashboard-style py-2">
             <div class="row">
               <div class="col-6 px-5">
@@ -145,10 +146,10 @@
     <!-- Mobile Design -->
     <div class="bg-warning dashboard-item-mobile">
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary dashboard-Mobile-style"
+        class="navbar navbar-expand-lg bg-body-tertiary dashboard-Mobile-style fixed-top"
       >
         <div class="container-fluid">
-          <div class="row">
+          <div class="row w-100">
             <!-- Logo Img -->
             <div class="col-3">
               <a href="#" class="d-flex align-items-end">
@@ -156,7 +157,7 @@
               </a>
             </div>
             <!-- search bar for mobile -->
-            <div class="col-7 d-flex align-items-center">
+            <div class="col-7 d-flex align-items-center justify-content-center">
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
@@ -230,21 +231,31 @@
                   <div class="collapse" id="ui-basic">
                     <ul class="nav flex-column sub-menu">
                       <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Management</a>
+                        <a class="nav-link text-light" href="#">
+                          Manage products</a
+                        >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Scheduling</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="#"> Reports </a>
+                        <a class="nav-link text-light" href="#">
+                          Add products</a
+                        >
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link dashboard-active" href="#">
+                  <a
+                    class="nav-link dashboard-active border-bottom border-secondary my-1"
+                    href="#"
+                  >
                     <i class="fa-solid fa-signal"></i>
                     <span>Analytics</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dashboard-active" href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
                   </a>
                 </li>
               </ul>
@@ -254,7 +265,9 @@
         </div>
       </nav>
       <!--   Mobile body Design -->
-      <div class="bg-success mobile-layout">Body</div>
+      <div class="bg-success mobile-layout w-100" style="padding-top: 70px">
+        body
+      </div>
       <!--  End Mobile body Design -->
     </div>
     <!-- End Mobile Design -->
