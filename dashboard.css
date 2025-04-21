@@ -3,6 +3,7 @@
   --dashboard-icon-color: rgb(196, 198, 204);
   --dashboard-content-color-hovor: rgb(151, 155, 168);
   --dashboard-header-color: rgb(254, 254, 254);
+  --dashboard-bg-color: rgb(242, 242, 245);
 }
 html,
 body {
@@ -17,10 +18,16 @@ body {
 /* Desctop Design */
 .dashboard-Desctop-style {
   background-color: var(--dashboard-color) !important;
-  height: 100vh;
+  /* Remove height: 100vh */
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Take full height of parent */
 }
 .dashboard-icon-style {
   color: var(--dashboard-icon-color) !important;
+}
+.bg-warning {
+  background-color: var(--dashboard-color) !important;
 }
 .dashboard-active {
   color: var(--dashboard-icon-color) !important;
@@ -31,7 +38,9 @@ body {
 .header-Dashboard-style {
   background-color: var(--dashboard-header-color);
 }
-
+.dashboard-bg-color {
+  background-color: var(--dashboard-bg-color) !important;
+}
 /* Desctop Design */
 
 /* Mobile Design */
@@ -45,6 +54,7 @@ body {
 
 .dashboard-item-desktop {
   display: block;
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
 }
 .dashboard-item-mobile {
   display: none;
